@@ -31,7 +31,12 @@ export default function TeamContainer({}: Props) {
     <div>
     <div className='grid grid-cols-3 gap-4 w-full'>
       {teams.map((team: any) => (
-        <TeamCard key={team.teamID} name={team.teamName} shortName={team.shortName} icon={team.teamIconUrl} />
+        <TeamCard 
+        key={team.teamID} 
+        name={team.teamName} 
+        shortName={team.shortName} 
+        icon={team.teamIconUrl} 
+        />
         ))}  
     </div>
     </div>
